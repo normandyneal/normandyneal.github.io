@@ -1,0 +1,13 @@
+html, body {
+  background-color: #fff;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+#build {
+  height: 100%;
+  margin: auto;
+  width: 100%;
+}
+
