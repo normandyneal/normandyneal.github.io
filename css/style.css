@@ -64,7 +64,7 @@ body{
 
 @media screen and (max-width: 601px) {
   .navigation{
-    font-size: .1em;
+    opacity: 0;
   }
 }
 
