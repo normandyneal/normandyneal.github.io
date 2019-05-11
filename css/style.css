@@ -2,6 +2,9 @@
   height: 100%;
   margin: auto;
   width: 100%;
+
+     border: .1rem solid #000000;
+
 }
 
 .nameLottiePosition{
@@ -14,6 +17,8 @@
   height: 100%;
   margin: auto;
   width: 100%;
+
+     border: .1rem solid #000000;
 }
 
 .cloudLottiePosition{
@@ -62,7 +67,7 @@ body{
   font-size: 1em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 0px) {
   .navigation{
     display : none;
   }
@@ -73,6 +78,17 @@ body{
      display: none;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .navigation{
+    display : inline;
+  }
+  .boxName{
+    display : inline;
+  }
+  .boxCreative{
+    display : inline;
+  }
+
 
 
 
@@ -80,6 +96,7 @@ body{
    position: relative;
    height: 100%;
    width: 100%;
+
    border: .1rem solid #000000;
  }
 
