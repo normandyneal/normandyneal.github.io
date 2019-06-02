@@ -30,6 +30,10 @@
 }
 
 
+
+
+
+
 body{
   margin: 0;
   height: 100vh;
@@ -37,18 +41,11 @@ body{
   background-color: #17B6FC;
 }
 
+.grid {
 
-.app {
   font-family: Futura;
   text-align: center;
-  color: #FFFFFF;
-  border: 1rem solid #17B6FC;
-  height:95.5%;
-  width:97.5%;
-}
-
-.grid {
-  border: .1rem solid #FFFFFF;
+  outline: .05rem solid #FFFFFF;;
   height: 100%;
 
   display: grid;
@@ -63,31 +60,7 @@ body{
   font-size: 1em;
 }
 
-@media only screen and (min-width: 0px) {
-  .navigation{
-    display : none;
-  }
-  .boxName{
-     display: none;
-  }
-  .boxCreative{
-     display: none;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .navigation{
-    display : inline;
-  }
-  .boxName{
-    display : inline;
-  }
-  .boxCreative{
-    display : inline;
-  }  
-  .responsiveHamburgerMenu{
-    display : none;
-  }
-}
+
 
 
  #box {
@@ -134,4 +107,30 @@ body{
   font-size:90%;
   grid-column:5/9;
   grid-row : 3/6;
+}
+
+@media only screen and (min-width: 0px) {
+  .navigation{
+    display : none;
+  }
+  .boxName{
+     display: none;
+  }
+  .boxCreative{
+     display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .navigation{
+    display : inline;
+  }
+  .boxName{
+    display : inline;
+  }
+  .boxCreative{
+    display : inline;
+  }
+  .responsiveHamburgerMenu{
+    display : none;
+  }
 }
