@@ -1,0 +1,149 @@
+/********************************************/
+li, a {
+    margin: 75px 0 -55px 0;
+    color: #17B6FC;
+    font: 14pt "Roboto", sans-serif;
+    font-weight: 700;
+    line-height: 1.8;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    outline: 0;
+    display: none;
+}
+li {
+    width: 230px;
+    text-indent: 56px;
+}
+a:focus {
+    display: block;
+    color: #333;
+    background-color: #eee;
+    transition: all .5s;
+}
+/********************************************/
+
+/********************************************/
+#burger, #trigger, #burger:before, #burger:after{
+    /* The absolute makes it so everything stacks in the order of apperanece in the html (regardless of z-index).*/
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    /* Here are the lines*/
+    background: #17B6FC;
+    width: 30px;
+    height: 5px;
+
+
+    transition: all .2s ease;
+
+
+    /* simple hover change to the cursor when over the hamburger, changes to a hand */
+    cursor: pointer;
+    /*This puts it above the cloud*/
+    z-index: 2;
+}
+#trigger {
+    /*changed to red
+    background: #FF0000; */
+
+    height: 25px;
+    background: none;
+
+}
+#burger:before {
+  /* content is required for before and after pseudo elements */
+    content: " ";
+    top: 10px;
+    left: 0;
+
+    /* Changed to green
+    background: #006400; */
+}
+#burger:after {
+  /* content is required for before and after pseudo elements */
+    content: " ";
+    top: 20px;
+    left: 0;
+    /* Changed to yellow
+    background: #FFFF00; */
+}
+/********************************************/
+
+/* when check occurs, move the elements and then apply transform to rotate moved elements*/
+/********************************************/
+#menu-toggle:checked + #trigger + #burger {
+    top: 35px;
+    transform: rotate(180deg);
+    transition: transform .2s ease;
+}
+
+#menu-toggle:checked + #trigger + #burger:before {
+    width: 20px;
+    top: -2px;
+    left: 18px;
+    transform: rotate(45deg) translateX(-5px);
+    /* transition: transform .2s ease; */
+}
+#menu-toggle:checked + #trigger + #burger:after {
+    width: 20px;
+    top: 2px;
+    left: 18px;
+    transform: rotate(-45deg) translateX(-5px);
+    /* transition: transform .2s ease; */
+}
+#menu {
+    z-index: 1;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+
+    /* initial size of cloud */
+    width: 110px;
+    height: 110px;
+
+    background-color: #fff;
+
+    /*cloud shape*/
+    border-bottom-right-radius: 100%;
+
+    /*cloud shadow*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+
+    animation: not-checked-anim .2s both;
+    transition: .2s;
+}
+#menu-toggle:checked + #trigger + #burger + #menu {
+    animation: checked-anim 1s ease both;
+}
+#menu-toggle:checked + #trigger ~ #menu > li, a {
+    /*now the list and links are displayed */
+    display: block;
+}
+/********************************************/
+
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    display: none;
+}
+
+/* This is for the cloud thing  */
+@keyframes checked-anim {
+    50% {
+        width: 3000px;
+        height: 3000px;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+@keyframes not-checked-anim {
+    0% {
+        width: 3000px;
+        height: 3000px;
+    }
+}
