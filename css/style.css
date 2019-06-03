@@ -39,13 +39,14 @@ body{
   height: 100vh;
   width: 100vw;
   background-color: #17B6FC;
+  color:#FFFFFF;
 }
 
 .grid {
 
   font-family: Futura;
   text-align: center;
-  outline: .05rem solid #FFFFFF;;
+  /*outline: .05rem solid #FFFFFF;*/
   height: 100%;
 
   display: grid;
