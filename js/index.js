@@ -12,7 +12,7 @@ var animation = bodymovin.loadAnimation({
   loop: true,
   autoplay: true,
   animationData: jsonFromAfterEffects
-})
+});
 
 var cloudAnimation = bodymovin.loadAnimation({
   container: document.getElementById('cloudLottie'),
@@ -20,24 +20,58 @@ var cloudAnimation = bodymovin.loadAnimation({
   loop: true,
   autoplay: true,
   animationData: cloudFromAfterEffects
-})
+});
 
-var cloudAnimation2 = bodymovin.loadAnimation({
+
+
+var cloudAnimationTwo = bodymovin.loadAnimation({
   container: document.getElementById('cloudLottieTwo'),
   renderer: 'svg',
   loop: true,
   autoplay: true,
+  animationData: cloudFromAfterEffects
+});
+var cloudAnimationThree = bodymovin.loadAnimation({
+  container: document.getElementById('cloudLottieThree'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  animationData: cloudFromAfterEffects
+});
+var cloudAnimationFour = bodymovin.loadAnimation({
+  container: document.getElementById('cloudLottieFour'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  animationData: cloudFromAfterEffects
+});
+var cloudAnimationFive = bodymovin.loadAnimation({
+  container: document.getElementById('cloudLottieFive'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  animationData: cloudFromAfterEffects
+});
+
+/*
+var unsplash = bodymovin.loadAnimation({
+  container: document.getElementById('unsplash'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
   animationData: x
-})
+});
 
 
-document.getElementById("cloudLottieTwo").addEventListener('click',function ()
+document.getElementById("unsplash").addEventListener('click',function ()
   {
    //window.open('https://www.youtube.com/watch?v=U-bEkrZ5JNA');
   window.open('https://unsplash.com/@norm_n_d/');
 
    //validation code to see State field is mandatory.
   }  );
+*/
+
 
   document.getElementById("cloudLottie").addEventListener('click',function ()
     {

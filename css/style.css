@@ -1,36 +1,12 @@
-#nameLottie {
-  height: 100%;
-  margin: auto;
-  width: 100%;
-}
 
-.nameLottiePosition{
-  position: relative;
-  grid-column:4/10;
-  grid-row : 2/7;
-}
 
-#cloudLottie {
-  height: 100%;
-  margin: auto;
-  width: 100%;
+/*
+*{
+  border: .1rem solid #000000;
+} */
 
-}
-
-.cloudLottiePosition{
-  position: relative;
-  grid-column:2/4;
-  grid-row : 5/7;
-}
-
-.cloudLottiePositionTwo{
-  position: relative;
-  grid-column:10/12;
-  grid-row : 2/4;
-}
 
 body{
-  margin: 0;
   height: 100vh;
   width: 100vw;
   background-color: #17B6FC;
@@ -38,96 +14,71 @@ body{
   font-family: Futura;
 }
 
+
+h1{
+  margin: .1rem 10rem .1rem 10rem;
+  font-size: 6rem;
+  text-align: center;
+}
+p{
+    font-size: 1rem;
+    margin: .1rem 7rem .1rem 7rem;
+    text-align: center;
+}
+
 .grid {
+
   text-align: center;
   /*outline: .05rem solid #FFFFFF;*/
-  height: 100%;
+  height: 40%;
 
   display: grid;
   grid-template-columns:repeat(12, 1fr);
-  grid-template-rows:repeat(7, 1fr);
+  grid-template-rows:repeat(6, 1fr);
 
+  grid-template-areas:
+
+  ".    .        .      .     .     .    .     .        cl4    cl5      cl5 cl5  "
+  ".    .        .      nl    nl    nl   nl    nl   nl        cl5      cl5 cl5 "
+  ".    .        .      nl    nl    nl   nl    nl   nl    .  .        .    "
+  ".    .        .      nl    nl    nl   nl    nl   nl    .    .        .    "
+  "cl3    cl3    cl2    nl    nl    nl   nl    nl   nl    cl    cl        .    "
+  "cl3    cl3    .      .     .     .    .     .    .     cl    cl        .    ";
 }
 
-.navigation{
-  position: relative;
-  top:20%;
-  font-size: 1em;
+#nameLottie{
+
+  grid-area: nl;
+}
+#cloudLottie {
+
+  grid-area: cl;
 }
 
+#cloudLottieTwo {
 
-
- #box {
-   position: relative;
-   height: 100%;
-   width: 100%;
-
-   /*border: .1rem solid #000000*/;
- }
-
- .boxTwo{
-   position: relative;
-   height: 100%;
-   width: 100%;
-   grid-column:1/2;
-   grid-row : 2/4;
- }
-
- .boxName {
-  position: absolute;
-  text-align: center;
-  transform: rotate(-90deg);
-  width:100%;
-  top:50%;
-  right:20%;
-  font-size:90%;
+  grid-area: cl2;
 }
 
-.boxThree{
-  position: relative;
-  height: 100%;
-  width: 100%;
-  grid-column:1/2;
-  grid-row : 5/7;
+#cloudLottieThree {
+
+  grid-area: cl3;
+}
+#cloudLottieFour {
+
+  grid-area: cl4;
+}
+#cloudLottieFive {
+
+  grid-area: cl5;
 }
 
-.boxCreative {
-  position: absolute;
-  text-align: center;
-  transform: rotate(-90deg);
-  width:100%;
-  top:50%;
-  right:20%;
-  font-size:90%;
-  grid-column:5/9;
-  grid-row : 3/6;
-}
+/*
+#unsplash {
+  grid-area: u;
+} */
 
-@media only screen and (min-width: 0px) {
-  .navigation{
-    display : none;
-  }
-  .boxName{
-     display: none;
-  }
-  .boxCreative{
-     display: none;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .navigation{
-    display : inline;
-  }
-  .boxName{
-    display : inline;
-  }
-  .boxCreative{
-    display : inline;
-  }
-  .responsiveHamburgerMenu{
-    display : none;
-  }
-}
+
 
 
 .images img {
@@ -150,15 +101,14 @@ body{
 }
 
 
-
-
-
 .properGrid {
     display: grid;
-    grid-template-columns: repeat(13, 1fr);
-    grid-auto-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: repeat(3, 1fr);
     grid-template-areas:
-    ". .  hd hd hd  ft ft ft  ax ax ax . .";
+    ". .  hd hd hd . ."
+    ". .  ft ft ft . ."
+    ". .  ax ax ax . .";
     grid-gap: 1rem 1rem;
 
     text-align: center;
@@ -201,4 +151,25 @@ body{
 .btn-hover.color-9 {
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .responsiveHamburgerMenu{
+    display : none;
+  }
+
+  .properGrid {
+      display: grid;
+      grid-template-columns: repeat(13, 1fr);
+      grid-auto-rows: repeat(1, 1fr);
+      grid-template-areas:
+      ". .  hd hd hd  ft ft ft  ax ax ax . .";
+      grid-gap: 1rem 1rem;
+
+      text-align: center;
+      background-image: linear-gradient(#17B6FC, #4e91fc);
+  }
+
 }

@@ -1,8 +1,8 @@
 /********************************************/
 li, a {
-    margin: 75px 0 -55px 0;
+    margin: 15rem 0 -5rem 0;
     color: #17B6FC;
-    font: 14pt "Roboto", sans-serif;
+    font: 3rem "futura", sans-serif;
     font-weight: 700;
     line-height: 1.8;
     text-decoration: none;
@@ -12,8 +12,8 @@ li, a {
     display: none;
 }
 li {
-    width: 230px;
-    text-indent: 56px;
+
+    text-indent: 18rem;
 }
 a:focus {
     display: block;
@@ -27,12 +27,12 @@ a:focus {
 #burger, #trigger, #burger:before, #burger:after{
     /* The absolute makes it so everything stacks in the order of apperanece in the html (regardless of z-index).*/
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 2.5rem;
+    left: 2.5rem;
 
     /* Here are the lines*/
     background: #17B6FC;
-    width: 30px;
+    width: 3rem;
     height: 5px;
 
 
@@ -48,14 +48,14 @@ a:focus {
     /*changed to red
     background: #FF0000; */
 
-    height: 25px;
+    height: 2.5rem;
     background: none;
 
 }
 #burger:before {
   /* content is required for before and after pseudo elements */
     content: " ";
-    top: 10px;
+    top: .7rem;
     left: 0;
 
     /* Changed to green
@@ -64,7 +64,7 @@ a:focus {
 #burger:after {
   /* content is required for before and after pseudo elements */
     content: " ";
-    top: 20px;
+    top: 1.4rem;
     left: 0;
     /* Changed to yellow
     background: #FFFF00; */
@@ -74,22 +74,22 @@ a:focus {
 /* when check occurs, move the elements and then apply transform to rotate moved elements*/
 /********************************************/
 #menu-toggle:checked + #trigger + #burger {
-    top: 35px;
+    top: 3rem;
     transform: rotate(180deg);
     transition: transform .2s ease;
 }
 
 #menu-toggle:checked + #trigger + #burger:before {
-    width: 20px;
+    width: 1.3rem;
     top: -2px;
-    left: 18px;
+    left: 2.1rem;
     transform: rotate(45deg) translateX(-5px);
     /* transition: transform .2s ease; */
 }
 #menu-toggle:checked + #trigger + #burger:after {
-    width: 20px;
+    width: 1.3rem;
     top: 2px;
-    left: 18px;
+    left: 2.1rem;
     transform: rotate(-45deg) translateX(-5px);
     /* transition: transform .2s ease; */
 }
@@ -100,8 +100,8 @@ a:focus {
     padding: 0;
 
     /* initial size of cloud */
-    width: 110px;
-    height: 110px;
+    width: 10rem;
+    height: 10rem;
 
     background-color: #fff;
 
