@@ -83,7 +83,7 @@ p{
 
 
 
-.images img {
+.images img, .images iframe   {
   width:  100%;
   clip-path: inset(4rem 0rem 2.8rem 0rem);
   /*border: .1rem solid #ff0000;*/
@@ -115,13 +115,14 @@ p{
 
 
 .btn-hover {
-    width: 200px;
-    font-size: 16px;
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
     margin: 20px;
-    height: 55px;
+
     text-align:center;
     border: none;
     background-size: 300% 100%;
