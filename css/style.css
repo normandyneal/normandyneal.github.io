@@ -16,9 +16,16 @@ body{
 
 
 h1{
-  margin: .1rem 8rem .1rem 8rem;
+  margin: .1rem 1rem .1rem 1rem;
   font-size: 6rem;
+  font-weight: bold;
   text-align: center;
+}
+h2{
+  margin: .1rem 8rem .1rem 8rem;
+  font-size: 5rem;
+  text-align: center;
+
 }
 p{
     font-size: 3rem;
@@ -79,14 +86,8 @@ p{
 
 } */
 
-
-
-
-
-.images img, .images iframe   {
-  width:  100%;
-  clip-path: inset(4rem 0rem 2.8rem 0rem);
-  /*border: .1rem solid #ff0000;*/
+.begin{
+  background-image: linear-gradient(#17B6FC, #4e91fc);
 }
 
 .imgOne{
@@ -99,6 +100,15 @@ p{
     grid-area: ax;
 }
 
+
+.images img {
+  width:  100%;
+  clip-path: inset(0rem 0rem 5.8rem 0rem);
+  /*border: .1rem solid #ff0000;*/
+}
+
+
+
 .properGrid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -110,7 +120,7 @@ p{
     grid-gap: 1rem 1rem;
 
     text-align: center;
-    background-image: linear-gradient(#17B6FC, #4e91fc);
+    background-image: linear-gradient(#4e91fc, #0F2E4C);
 }
 
 
