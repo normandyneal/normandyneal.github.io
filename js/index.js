@@ -62,21 +62,25 @@ var unsplash = bodymovin.loadAnimation({
   animationData: x
 });
 
-
-document.getElementById("unsplash").addEventListener('click',function ()
-  {
-   //window.open('https://www.youtube.com/watch?v=U-bEkrZ5JNA');
-  window.open('https://unsplash.com/@norm_n_d/');
-
-   //validation code to see State field is mandatory.
-  }  );
 */
 
 
-  document.getElementById("cloudLottie").addEventListener('click',function ()
-    {
-     //window.open('https://www.youtube.com/watch?v=U-bEkrZ5JNA');
-    window.open('https://soundcloud.com/mynameisneal');
+  document.querySelector(".about").addEventListener('click',function () {
+    window.open('https://www.linkedin.com/in/normandy-neal-668b52aa/');
+  }  );
 
-     //validation code to see State field is mandatory.
-    }  );
+  document.querySelector(".photos").addEventListener('click',function () {
+    window.open('https://unsplash.com/@norm_n_d/');
+  }  );
+
+  document.querySelector(".videos").addEventListener('click',function () {
+    window.open('https://youtu.be/U-bEkrZ5JNA');
+  }  );
+
+  document.querySelector(".tracks").addEventListener('click',function () {
+    window.open('https://soundcloud.com/mynameisneal');
+  }  );
+
+  document.querySelector(".contact").addEventListener('click',function () {
+    window.open('https://www.instagram.com/norm_n_d/');
+  }  );
