@@ -1,10 +1,7 @@
-
-
 /*
 *{
   border: .1rem solid #000000;
 } */
-
 
 body{
   height: 100vh;
@@ -14,13 +11,13 @@ body{
   font-family: Futura;
 }
 
-
 h1{
   margin: .1rem 1rem .1rem 1rem;
   font-size: 6rem;
   font-weight: bold;
   text-align: center;
 }
+
 h2{
   margin: .1rem 8rem .1rem 8rem;
   font-size: 5rem;
@@ -36,7 +33,6 @@ p{
 }
 
 .grid {
-
   text-align: center;
   /*outline: .05rem solid #FFFFFF;*/
   height: 40%;
@@ -44,7 +40,6 @@ p{
   display: grid;
   grid-template-columns:repeat(12, 1fr);
   grid-template-rows:repeat(6, 1fr);
-
   grid-template-areas:
 
   ".    .        .      .     .     .    .     .        cl4    cl5      cl5 cl5  "
@@ -56,36 +51,26 @@ p{
 }
 
 #nameLottie{
-
   grid-area: nl;
 }
 #cloudLottie {
-
   grid-area: cl;
 }
-
 #cloudLottieTwo {
-
   grid-area: cl2;
 }
-
 #cloudLottieThree {
-
   grid-area: cl3;
 }
 #cloudLottieFour {
-
   grid-area: cl4;
 }
 #cloudLottieFive {
-
   grid-area: cl5;
 }
-
 /*
 #unsplash {
   grid-area: u;
-
 } */
 
 .begin{
@@ -103,14 +88,10 @@ p{
     grid-area: ax;
 }
 
-
 .images img {
   width:  100%;
-
   /*border: .1rem solid #ff0000;*/
 }
-
-
 
 .properGrid {
     display: grid;
@@ -133,8 +114,6 @@ p{
 .bottomSpace{
  padding-bottom: 3rem;
 }
-
-
 
 /* buttons */
 .btn-hover {
@@ -169,15 +148,11 @@ p{
     outline: none;
 }
 
-
 .btn-hover.color-9 {
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
-
 /*       end of buttons           */
-
-
 
 
 @media only screen and (min-width: 1200px) {

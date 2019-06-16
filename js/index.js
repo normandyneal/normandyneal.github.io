@@ -64,7 +64,6 @@ var unsplash = bodymovin.loadAnimation({
 
 */
 
-
   document.querySelector(".about").addEventListener('click',function () {
     window.open('https://www.linkedin.com/in/normandy-neal-668b52aa/');
   }  );
