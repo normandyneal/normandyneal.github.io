@@ -154,11 +154,55 @@ p{
 }
 /*       end of buttons           */
 
-
 @media only screen and (min-width: 1200px) {
 
   .responsiveHamburgerMenu{
     display : none;
+  }
+
+  li, a{
+    margin: 0 0 0 0;
+    color: #17B6FC;
+    background-color: #FFFFFF;
+    font: 1rem "futura", sans-serif;
+    font-weight: 0;
+    line-height: 1;
+
+    display: block;
+
+    text-indent: 0;
+  }
+
+  .flex-container {
+    height:4rem;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+
+    justify-content: flex-start;
+  }
+
+  .headerLogo{
+      flex: 3 0 auto;
+
+  }
+
+  .headerLogo a, .headerElement a {
+    padding-top: 1.8rem;
+  }
+  .headerLogo a{
+    padding-left: 2rem;
+  }
+
+  .headerElement{
+      text-align: center;
+      flex: 1 0 auto;
   }
 
   .properGrid {
