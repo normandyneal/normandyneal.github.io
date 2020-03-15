@@ -73,7 +73,7 @@ var unsplash = bodymovin.loadAnimation({
   }  );
 
   document.querySelector(".videos").addEventListener('click',function () {
-    window.open('https://youtu.be/U-bEkrZ5JNA');
+    window.open('https://vimeo.com/normandyneal');
   }  );
 
   document.querySelector(".tracks").addEventListener('click',function () {
